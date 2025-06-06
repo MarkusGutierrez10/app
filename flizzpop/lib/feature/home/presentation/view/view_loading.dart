@@ -15,7 +15,7 @@ class loading extends StatelessWidget {
           
         
           Opacity(
-            opacity: 0.2,
+            opacity: 0.5,
             child: Image.asset(
               'assets/fondo.jpeg',
               fit: BoxFit.cover,
