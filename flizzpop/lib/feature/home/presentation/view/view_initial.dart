@@ -63,7 +63,27 @@ class _InitialState extends State<Initial> {
                   ),
                 ),
                 SizedBox(height: 20),
-                
+                ElevatedButton(
+                  onPressed: () {
+                    print('Botón presionado');
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.deepPurple,
+                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    elevation: 5,
+                  ),
+                  child: Text(
+                    'Empezar',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
