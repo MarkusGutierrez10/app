@@ -1,10 +1,10 @@
-class User{
+class Producto{
   int? userId;
   int? id;
   String? title;
   String body = '';
 
-  User(Map map){
+  Producto(Map map){
     this.userId = map['userId'];
     this.id = map['id'];
     this.title = map['title'];

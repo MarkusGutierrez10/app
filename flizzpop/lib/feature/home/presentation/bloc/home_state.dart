@@ -10,7 +10,7 @@ sealed class HomeState extends Equatable {
 final class HomeInitial extends HomeState {}
 final class HomeLoadInProgress extends HomeState{}
 final class HomeLoadSuccess extends HomeState{
-  User user;
-  HomeLoadSuccess(this.user);
+  Producto producto;
+  HomeLoadSuccess(this.producto);
 }
 final class HomeLoadFailure extends HomeState{}

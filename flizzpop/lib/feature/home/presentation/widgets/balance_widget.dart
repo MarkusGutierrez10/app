@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-import '../../../data/models/user.dart';
+import '../../../data/models/producto.dart';
 
 class Balance extends StatelessWidget {
-  final User user;
-  const Balance(this.user);
+  final Producto producto;
+  const Balance(this.producto);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Text('Saldo'),
-        Text('${user.id}'),
-        Text(user.body)
+        Text('${producto.id}'),
+        Text(producto.body)
       ],
     );
   }

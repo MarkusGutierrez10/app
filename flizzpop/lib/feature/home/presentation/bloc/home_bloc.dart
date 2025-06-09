@@ -4,7 +4,7 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:http/http.dart' as http;
 
-import '../../../data/models/user.dart';
+import '../../../data/models/producto.dart';
 
 part 'home_event.dart';
 part 'home_state.dart';
@@ -17,8 +17,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       final response = await http.get(url);
       if (response.statusCode == 200){
         Map objectMap = jsonDecode(response.body);
-        User user = User(objectMap);
-        emit(HomeLoadSuccess(user));
+        Producto producto = Producto(objectMap);
+        emit(HomeLoadSuccess(producto));
       }else{
         emit(HomeLoadFailure());
       }
