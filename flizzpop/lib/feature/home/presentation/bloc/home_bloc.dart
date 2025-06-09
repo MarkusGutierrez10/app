@@ -15,7 +15,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       emit(HomeLoadInProgress());
       final url = Uri.parse('https://run.mocky.io/v3/356a086a-a676-490e-8392-acccac26ef9c');
       final response = await http.get(url);
-      if (response.statusCode == 200){
+      if (response.statusCode == 201){
         Map objectMap = jsonDecode(response.body);
         Producto producto = Producto(objectMap);
         emit(HomeLoadSuccess(producto));

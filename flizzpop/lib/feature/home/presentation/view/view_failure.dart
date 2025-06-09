@@ -1,26 +1,9 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
 
-class failure extends StatefulWidget {
-  const failure({super.key});
-
-  @override
-  State<failure> createState() => _InitialState();
-}
-
-class _InitialState extends State<failure> {
-  bool _showImage = true;
-
-  @override
-  void initState() {
-    super.initState();
-    // Oculta la imagen después de 2 segundos
-    Timer(Duration(seconds: 2), () {
-      setState(() {
-        _showImage = false;
-      });
-    });
-  }
+class failure extends StatelessWidget {
+  const failure({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +12,7 @@ class _InitialState extends State<failure> {
         fit: StackFit.expand,
         children: [
           Opacity(
-            opacity: 0.5,
+            opacity: 0.2,
             child: Image.asset(
               'assets/fondo.jpeg',
               fit: BoxFit.cover,
@@ -39,51 +22,22 @@ class _InitialState extends State<failure> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                AnimatedOpacity(
-                  opacity: _showImage ? 1.0 : 0.0,
-                  duration: Duration(seconds: 5),
-                  child: Image.asset('assets/imgInitial.jpg', width: 500),
+                const Icon(
+                  Icons.error,
+                  color: Colors.red,
+                  size: 100,
                 ),
-                SizedBox(height: 20),
-                Text(
-                  "MULTIPLES ERRORES!",
+                const SizedBox(height: 20),
+                const Text(
+                  "𝙇𝙤 𝙨𝙚𝙣𝙩𝙞𝙢𝙤𝙨, 𝙝𝙪𝙗𝙤 𝙪𝙣 𝙚𝙧𝙧𝙤𝙧",
                   style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                    shadows: [
-                      Shadow(
-                        blurRadius: 10.0,
-                        color: Colors.black.withOpacity(0.3),
-                        offset: Offset(2.0, 2.0),
-                      ),
-                    ],
-                    letterSpacing: 2,
-                    fontFamily: 'Arial',
+                    fontSize: 18,
+                    color: Color.fromARGB(250, 250, 4, 16),
                   ),
+                  textAlign: TextAlign.center,
                 ),
-                SizedBox(height: 20),
-                ElevatedButton(
-                  onPressed: () {
-                    print('Botón presionado');
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.deepPurple,
-                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    elevation: 5,
-                  ),
-                  child: Text(
-                    'Empezar',
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
+                const SizedBox(height: 10),
+                
               ],
             ),
           ),
@@ -92,3 +46,7 @@ class _InitialState extends State<failure> {
     );
   }
 }
+
+
+
+
