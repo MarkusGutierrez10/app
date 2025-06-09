@@ -1,13 +1,13 @@
 class Producto{
-  int? userId;
-  int? id;
-  String? title;
+  String? nombre;
+  String? img;
+  int? precio;
   String body = '';
 
   Producto(Map map){
-    this.userId = map['userId'];
-    this.id = map['id'];
-    this.title = map['title'];
+    this.nombre = map['nombre'];
+    this.img = map['img'];
+    this.precio= map['precio'];
     this.body = map['body'];
   }
 }
