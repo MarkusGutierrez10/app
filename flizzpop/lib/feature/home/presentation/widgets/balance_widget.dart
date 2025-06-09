@@ -11,7 +11,7 @@ class Balance extends StatelessWidget {
     return Column(
       children: [
         Text('Saldo'),
-        Text('${producto.products[0].nombre}')
+        Text('${producto.nombre}')
       ],
     );
   }
