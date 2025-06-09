@@ -10,10 +10,24 @@ class Balance extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text('Saldo'),
-        Text('${producto.nombre}'),
-        Text('${producto.imagen}'),
-        Text('${producto.precio}'),
+        Text('¡BEBIDAS!',
+          style: TextStyle(
+            fontSize: 32,
+            fontWeight: FontWeight.bold,
+            color: const Color.fromARGB(255, 0, 0, 0),
+            letterSpacing: 2,
+            shadows: [
+              Shadow(
+                offset: Offset(1, 1),
+                blurRadius: 3,
+                color: Colors.black26,
+              ),
+            ],
+          ),
+          textAlign: TextAlign.center,  // Centrado
+        ),
+
+
         
         //card #1
         Card(
