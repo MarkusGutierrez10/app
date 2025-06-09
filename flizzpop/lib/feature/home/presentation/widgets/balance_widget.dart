@@ -12,6 +12,9 @@ class Balance extends StatelessWidget {
       children: [
         Text('Saldo'),
         Text('${producto.nombre}'),
+        Text('${producto.imagen}'),
+        Text('${producto.precio}'),
+        
         //Text(user.body)
         Card(
           elevation: 6,
@@ -25,8 +28,7 @@ class Balance extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text(
-                  'Título de la Card',
+                Text("${producto.nombre}",
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
@@ -37,7 +39,7 @@ class Balance extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(12),
                   child: Image.network(
-                    'https://picsum.photos/300',
+                    '${producto.imagen2}',
                     height: 180,
                     width: double.infinity,
                     fit: BoxFit.cover,
@@ -45,7 +47,7 @@ class Balance extends StatelessWidget {
                 ),
                 SizedBox(height: 16),
                 Text(
-                  'Esta es una descripción breve que explica el contenido de esta tarjeta. Todo está alineado al centro para un diseño limpio y agradable.',
+                  '${producto.precio}',
                   style: TextStyle(fontSize: 16),
                   textAlign: TextAlign.center,
                 ),
