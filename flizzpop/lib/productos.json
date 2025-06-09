@@ -3,13 +3,13 @@
     "imagen": "assets/cocacola.jpg",
     "precio": 5000,
     "nombre2": "7UP",
-    "imagen2": "assets/7up.jpeg",
+    "imagen2": "assets/7up.jpg",
     "precio2": 8000,
     "nombre3": "Coca Cola Zero", 
-    "imagen3": "assets/coca zero.jpeg",
+    "imagen3": "assets/coca zero.jpg",
     "precio3": 2000,
     "nombre4": "Dr-Pepper", 
-    "imagen4": "assets/Dr-Pepper.jpeg",
+    "imagen4": "assets/Dr-Pepper.jpg",
     "precio4": 5700
     
 }
