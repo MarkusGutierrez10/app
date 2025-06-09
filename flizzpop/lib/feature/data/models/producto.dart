@@ -1,26 +1,30 @@
 class Producto{
-  List<Ventas> products = [];
-
-  Producto(Map map){
-    List<dynamic> listaVentas = map['productos'];
-    // Recorremos la lista y creamos un objeto Ventas para cada producto
-    for (var item in listaVentas) {
-      products.add(Ventas(
-        nombre: item['nombre'],
-        imagen: item['imagen'],
-        precio: item['precio'],
-      ));
-    }
-  }
-}
-
-class Ventas{
   String? nombre;
   String? imagen;
   int? precio;
-  //Ventas(){
-  Ventas({this.nombre, this.imagen, this.precio});
-  
+  String? nombre2;
+  String? imagen2;
+  int? precio2;
+  String? nombre3;
+  String? imagen3;
+  int? precio3;
+  String? nombre4;
+  String? imagen4;
+  int? precio4;
 
-
+  Producto(Map map){
+    this.nombre = map['nombre'];
+    this.imagen = map['imagen'];
+    this.precio = map['precio'];
+    this.nombre2 = map['nombre2'];
+    this.imagen2 = map['imagen2'];
+    this.precio2 = map['precio2'];
+    this.nombre3 = map['nombre3'];
+    this.imagen3 = map['imagen3'];
+    this.precio3 = map['precio3'];
+    this.nombre4 = map['nombre4'];
+    this.imagen4 = map['imagen4'];
+    this.precio4 = map['precio4'];
+  }
 }
+

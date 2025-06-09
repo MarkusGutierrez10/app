@@ -1,5 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../bloc/home_bloc.dart';
 
 class Initial extends StatefulWidget {
   const Initial({super.key});
@@ -65,7 +68,8 @@ class _InitialState extends State<Initial> {
                 SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
-                    print('Botón presionado');
+                    final homeBloc = BlocProvider.of<HomeBloc>(context);
+                    homeBloc.add(HomeSearchPressed());
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.deepPurple,

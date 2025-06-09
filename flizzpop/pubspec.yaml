@@ -33,6 +33,7 @@ dependencies:
   equatable: ^2.0.7
   flutter:
     sdk: flutter
+  flutter_bloc: ^9.1.1
   http: ^1.4.0
 
 dev_dependencies:
@@ -54,16 +55,10 @@ flutter:
   assets:
     - assets/cargando.gif
     - assets/fondo.jpeg
-    - assets/cocacola.jpeg
-    - assets/7up.jpeg
-    - assets/coca zero.jpeg
-    - assets/Dr-Pepper.jpeg
-    - assets/Fanta.jpeg
-    - assets/monster.jpeg
-    - assets/Pepsi.jpeg
-    - assets/redbull.jpeg
-    - assets/Schweppes.jpeg
-    - assets/sprite.jpeg
+    - assets/cocacola.jpg
+    - assets/cocacolazero.jpg
+    - assets/7up.jpg
+    - assets/pepper.jpg
     - assets/imgInitial.jpg
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -13,7 +13,10 @@ class Success extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Balance(producto),  
+      body: SingleChildScrollView(
+        child: Balance(producto),
+      ),
+       
     );
   }
 }

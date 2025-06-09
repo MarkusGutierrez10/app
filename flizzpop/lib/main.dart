@@ -12,12 +12,13 @@ import 'feature/home/presentation/view/view_initial.dart';
 void main() {
   runApp(MyApp());
 }
-
 class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      
+  Widget build(BuildContext context) { 
+    return BlocProvider(
+      create: (context) => HomeBloc(),
+      child: MaterialApp(
+          home: BlocBuilder<HomeBloc, HomeState>(
             builder: (context, state) {
               if (state is HomeLoadSuccess){
                 Producto producto = state.producto;
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
               }
               return Initial();
             },
-          );
-      
+          )),
+    );
   }
 }

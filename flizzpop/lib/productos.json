@@ -1,54 +1,15 @@
 {
-    "productos":[
-        {
-            "nombre": "Coca Cola",
-            "imagen": "assets/cocacola.jpeg",
-            "Precio": 5000
-        },
-        {
-            "nombre": "7UP",
-            "imagen": "assets/7up.jpeg",
-            "Precio": 8000
-        },
-        {
-            "nombre": "Coca Cola Zero", 
-            "imagen": "assets/coca zero.jpeg",
-            "Precio": 2000
-        },
-        {
-            "nombre": "Dr-Pepper", 
-            "imagen": "assets/Dr-Pepper.jpeg",
-            "Precio": 5700
-        },
-        {
-            "nombre": "Fata", 
-            "imagen": "assets/Fanta.jpeg",
-            "Precio": 1300
-        },
-        {
-            "nombre": "Monster", 
-            "imagen": "assets/monster.jpeg",
-            "Precio": 5000
-        },
-        {
-            "nombre": "Pepsi", 
-            "imagen": "assets/Pepsi.jpeg",
-            "Precio": 10000
-        },
-        {
-            "nombre": "Red Bull", 
-            "imagen": "assets/redbull.jpeg",
-            "Precio": 6000
-        },
-        {
-            "nombre": "Schweppes", 
-            "imagen": "assets/Schweppes.jpeg",
-            "Precio": 5300
-        },
-        {
-            "nombre": "Sprite", 
-            "imagen": "assets/sprite.jpeg",
-            "Precio": 23500
-        }
-    ]
+    "nombre": "Coca Cola",
+    "imagen": "assets/cocacola.jpg",
+    "precio": 5000,
+    "nombre2": "7UP",
+    "imagen2": "assets/7up.jpg",
+    "precio2": 8000,
+    "nombre3": "Coca Cola Zero", 
+    "imagen3": "assets/cocacolazero.jpg",
+    "precio3": 2000,
+    "nombre4": "Dr-Pepper", 
+    "imagen4": "assets/Pepper.jpg",
+    "precio4": 5700
+    
 }
