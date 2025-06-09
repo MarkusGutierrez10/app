@@ -15,7 +15,7 @@ class Balance extends StatelessWidget {
         Text('${producto.imagen}'),
         Text('${producto.precio}'),
         
-        //Text(user.body)
+        //card #1
         Card(
           elevation: 6,
           shape: RoundedRectangleBorder(
@@ -39,16 +39,56 @@ class Balance extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(12),
                   child: Image.network(
+                    'assets/pepper.jpg',
+                    height: 180,
+                    width: double.infinity,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                SizedBox(height: 26),
+                Text(
+                  '\$ ${producto.precio}',
+                  style: TextStyle(fontSize: 30),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+          ),
+        ),
+        //card #2
+        Card(
+          elevation: 6,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+          margin: EdgeInsets.all(16),
+          child: Padding(
+            padding: EdgeInsets.all(20),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text("${producto.nombre2}",
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(height: 16),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: Image.network(
                     '${producto.imagen2}',
                     height: 180,
                     width: double.infinity,
                     fit: BoxFit.cover,
                   ),
                 ),
-                SizedBox(height: 16),
+                SizedBox(height: 26),
                 Text(
-                  '${producto.precio}',
-                  style: TextStyle(fontSize: 16),
+                  '\$ ${producto.precio2}',
+                  style: TextStyle(fontSize: 30),
                   textAlign: TextAlign.center,
                 ),
               ],
