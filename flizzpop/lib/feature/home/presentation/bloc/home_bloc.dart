@@ -13,7 +13,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   HomeBloc() : super(HomeInitial()) {
     on<HomeSearchPressed>((event, emit) async{
       emit(HomeLoadInProgress());
-      final url = Uri.parse('https://run.mocky.io/v3/ac3cee7c-3dab-49ba-ab72-17a703d47a38');
+      final url = Uri.parse('https://run.mocky.io/v3/356a086a-a676-490e-8392-acccac26ef9c');
       final response = await http.get(url);
       if (response.statusCode == 200){
         Map objectMap = jsonDecode(response.body);
